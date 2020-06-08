@@ -12,7 +12,7 @@
 }
 
 #page-create-point header a {
-    color: var(--title-color);
+    color: var(--color-text);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -57,14 +57,14 @@ form legend h2 {
 
 form legend span {
     font-size: 14px;
-    color: var(--title-color);
+    color: var(--color-text);
 }
 
 form .field {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
-    flex-grow: 1;
+    width: 100%;
 }
 
 form .field-group {
@@ -73,13 +73,13 @@ form .field-group {
 
 form input,
 form select {
-    background-color: #f0f0f5;
+    background-color: var(--color-background);
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
     border-radius: 8px;
-    /* outline: none; */
 }
+
 form select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -98,7 +98,7 @@ form .field-group .field + .field {
 form button {
     width: 260px;
     height: 56px;
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -109,12 +109,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #2fb86e;
+    background-color: var(--color-primary-dark);
 }
 
 .items-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
@@ -138,15 +138,16 @@ form button:hover {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    color: var(--title-color);
+    color: var(--color-text);
 }
 
 .items-grid li.selected {
-    background-color: #e1faec;
-    border: 2px solid #34cb79;
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary);
 }
 
 .items-grid li img,
 .items-grid li span {
     pointer-events: none;
+    user-select: none;
 }

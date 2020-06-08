@@ -18,7 +18,7 @@
         <div class="cards">
             {% for place in places %}
             <div class="card">
-                <img src="{{ place.image }}" alt="{{ place.name }}">
+                <img src="{{ place.image }}" alt="">
                 <h1>{{ place.name }}</h1>
                 <h3>{{ place.items }}</h3>
                 <p>
@@ -30,7 +30,7 @@
             {% endfor %}
         </div>
         {% else %}
-        <h4><strong>Nenhum ponto</strong> encontrado</h4>
+        <h4><strong>Nenhum ponto de coleta</strong> encontrado</h4>
         {% endif %}
     </main>
 {% endblock content %}
