@@ -40,13 +40,6 @@
     line-height: 42px;
 }
 
-#modal form label {
-    font-size: 14px;
-    line-height: 16px;
-    display: block;
-    margin-bottom: 8px;
-}
-
 #modal form .field {
     display: flex;
 }
