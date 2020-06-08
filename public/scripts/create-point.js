@@ -40,29 +40,19 @@ document
     .querySelector('select[name=uf]')
     .addEventListener('change', getCities)
 
-const itemsToCollect = document.querySelectorAll('.items-grid li')
-
-for (let item of itemsToCollect) {
+document.querySelectorAll('.items-grid li').forEach(item => {
     item.addEventListener('click', handleSelectedItem)
-}
+})
 
 const collectedItems = document.querySelector('input[name=items]')
-let selectedItems = []
 
 function handleSelectedItem(event) {
     event.target.classList.toggle('selected')
-    const itemId = event.target.dataset.id
-
-    const alreadySelected = selectedItems.findIndex(item => item === itemId)
-
-    if (alreadySelected != -1) {
-        const filteredItems = selectedItems.filter(item => {
-            const itemIsDifferent = item != itemId
-            return itemIsDifferent
-        })
-        selectedItems = filteredItems
-    } else selectedItems.push(itemId)
+    
+    let selectedItems = []
+    document.querySelectorAll('.items-grid .selected').forEach(item => {
+        selectedItems.push(item.dataset.id)
+    })
 
     collectedItems.value = selectedItems.join(', ')
-    console.log(collectedItems.value)
 }
