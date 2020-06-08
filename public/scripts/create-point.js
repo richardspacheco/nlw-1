@@ -63,5 +63,6 @@ function handleSelectedItem(event) {
         selectedItems = filteredItems
     } else selectedItems.push(itemId)
 
-    collectedItems.value = selectedItems
+    collectedItems.value = selectedItems.join(', ')
+    console.log(collectedItems.value)
 }
