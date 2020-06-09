@@ -4,7 +4,6 @@
 
 <h3 align="center">
     Next Level Week #01
-    <br>:construction: Em progresso :construction:
 </h3>
 
 ## :computer: Projeto
