@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
-{% set pageId = "page-create-point" %}
+{% set pageId = "page-register-point" %}
 
 {% block title %}
     <title>Criar um ponto de coleta</title>
 {% endblock title %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/register-point.css">
     <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
@@ -97,10 +97,10 @@
 
 {% block modal %}
     {% if saved %}
-    {% include "partials/point-created.html" %}
+    {% include "partials/modal-success.html" %}
     {% endif %}
 {% endblock modal %}
 
 {% block scripts %}
-    <script src="/scripts/create-point.js"></script>
+    <script src="/scripts/register-point.js"></script>
 {% endblock scripts %}

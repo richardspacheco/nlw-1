@@ -23,11 +23,11 @@
         grid-template-columns: 1fr;
     }
 
-    #page-create-point .field-group {
+    #page-register-point .field-group {
         flex-direction: column;
     }
 
-    #page-create-point .field-group .field + .field {
+    #page-register-point .field-group .field + .field {
         margin-left: 0px;
     }
 }

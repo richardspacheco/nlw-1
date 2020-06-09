@@ -17,8 +17,8 @@ server.get('/', (req, res) => {
     })
 })
 
-server.get('/create-point', (req, res) => {
-    return res.render("create-point.html")
+server.get('/register-point', (req, res) => {
+    return res.render("register-point.html")
 })
 
 server.post('/savepoint', (req, res) => {
@@ -50,7 +50,7 @@ server.post('/savepoint', (req, res) => {
         }
         console.log('Cadastrado com sucesso')
         console.log(this)
-        return res.render("create-point.html", { saved: true })
+        return res.render("register-point.html", { saved: true })
     })
 })
 
