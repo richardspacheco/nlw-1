@@ -14,7 +14,7 @@
 }
 
 #page-home header {
-    margin-top: 40px;
+    margin-top: 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
 }
 
 #page-home header span {
-    margin-right: 16px;
+    margin-right: 12px;
     background-image: url('../assets/log-in.svg');
     width: 20px;
     height: 20px;
@@ -43,11 +43,13 @@
 
 #page-home main h1 {
     font-size: 54px;
+    line-height: 120%;
 }
 
 #page-home main p {
     font-size: 24px;
-    line-height: 38px;
+    line-height: 160%;
+    color: var(--color-text-light);
     margin-top: 24px;
 }
 

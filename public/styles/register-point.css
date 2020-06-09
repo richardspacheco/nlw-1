@@ -5,7 +5,7 @@
 }
 
 #page-register-point header {
-    margin-top: 40px;
+    margin-top: 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 #page-register-point header a span {
-    margin-right: 16px;
+    margin-right: 12px;
     background-image: url('../assets/arrow-left.svg');
     display: flex;
     width: 24px;
@@ -32,6 +32,8 @@ form {
     padding: 64px;
     border-radius: 8px;
     max-width: 730px;
+    display: flex;
+    flex-direction: column;
 }
 
 form h1 {
@@ -57,7 +59,7 @@ form legend h2 {
 
 form legend span {
     font-size: 14px;
-    color: var(--color-text);
+    color: var(--color-text-light);
 }
 
 form .field {
@@ -89,6 +91,7 @@ form select {
 form label {
     font-size: 14px;
     margin-bottom: 8px;
+    color: var(--color-text-light);
 }
 
 form .field-group .field + .field {
@@ -105,6 +108,7 @@ form button {
     font-size: 16px;
     border: 0;
     margin-top: 40px;
+    align-self: flex-end;
     transition: background-color 400ms;
 }
 
