@@ -96,7 +96,9 @@
 {% endblock content %}
 
 {% block modal %}
-    {% if saved %}
+    {% if dbSuccess == false %}
+    {% include "partials/modal-error.html" %}
+    {% elseif dbSuccess == true %}
     {% include "partials/modal-success.html" %}
     {% endif %}
 {% endblock modal %}

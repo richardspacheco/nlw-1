@@ -8,6 +8,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
 {% block content %}
@@ -38,3 +39,9 @@
         {% endif %}
     </main>
 {% endblock content %}
+
+{% block modal %}
+    {% if dbSuccess == false %}
+    {% include "partials/modal-error.html" %}
+    {% endif %}
+{% endblock modal %}

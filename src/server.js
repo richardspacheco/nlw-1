@@ -46,11 +46,11 @@ server.post('/savepoint', (req, res) => {
     db.run(query, values, function (err) {
         if (err) {
             console.log(err)
-            return res.send('Erro no cadastro!')
+            return res.render("register-point.html", { dbSuccess: false })
         }
         console.log('Cadastrado com sucesso')
         console.log(this)
-        return res.render("register-point.html", { saved: true })
+        return res.render("register-point.html", { dbSuccess: true })
     })
 })
 
@@ -67,7 +67,8 @@ server.get('/search', (req, res) => {
 
     db.all(sql, function (err, rows) {
         if (err) {
-            return console.log(err)
+            console.log(err)
+            return res.render("search-results.html", { dbSuccess: false })
         }
         const total = rows.length
         return res.render("search-results.html", { places: rows, total })
