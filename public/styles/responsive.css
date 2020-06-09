@@ -1,6 +1,6 @@
-@media (max-width: 900px) {
+@media (max-width: 1279px) {
     #page-home {
-        background-position-x: 70vw;
+        background-image: none;
     }
 
     #page-home .content {
@@ -18,11 +18,9 @@
     #page-home main {
         align-items: center;
     }
+}
 
-    #page-search-results .card {
-        grid-template-columns: 1fr;
-    }
-
+@media (max-width: 768px) {
     #page-register-point .field-group {
         flex-direction: column;
     }
@@ -30,16 +28,20 @@
     #page-register-point .field-group .field + .field {
         margin-left: 0px;
     }
-}
 
-@media (min-width: 1700px) {
-    #page-home {
-        background-position-x: 40vw;
+    #page-search-results .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-height: 760px) {
+@media (min-width: 1440px) {
     #page-home {
-        background-position-y: 200px;
+        background-position-x: calc(50% + 280px)
+    }
+}
+
+@media (max-height: 768px) {
+    #page-home {
+        background-position-y: 110px;
     }
 }
