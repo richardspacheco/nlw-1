@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-    Next Level Week #01
+    <a href="https://nlw-1.herokuapp.com/">Next Level Week #01</a>
 </h3>
 
 ## :computer: Projeto
@@ -20,12 +20,8 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 1. Acesse o diretório do projeto;
 2. Execute `npm install` para instalar as dependências do projeto;
-3. Execute `npm start` para iniciar o servidor de desenvolvimento.
-
-## :framed_picture: Layout
-
-Você pode acessar o layout do projeto através [desse link](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/?viewer=1).
+3. Execute `npm run dev` para iniciar o servidor de desenvolvimento.
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Acesse o arquivo [LICENSE](LICENSE.md) para mais detalhes.
